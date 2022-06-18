@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Duy Le">
+		<title>Duy Le</title>
+		<link rel='stylesheet' href='Styles\change.css'/>
+
+        
+	</head>
+
+	<body>
+        <br>
+        <div class="grid">
+            <div class="five"><a href="councilMinutes.html"><img src="Photos\councilMinutes.png" width="170"></img></a></div>
+            <div class="six"><a href="onlineForm.html"><img src="Photos\onlineForms.png" width="170"></img></a></div>
+            <div class="seven"><a href="townServices.html"><img src="Photos\townServices.png" width="170"></img></a></div>
+            <div class="eight"><a href="ordinances.html"><img src="Photos\ordinances.png" width="170"></img></a></div>
+
+            <h2><div class="one"><a href="councilMinutes.html"> Council Minutes</a></div></h2>
+            <h2><div class="two"><a href="onlineForm.html"> Online Form</a></div></h2>
+            <h2><div class="three"><a href="townServices.html"> Town Services</a></div></h2>
+            <h2><div class="four"><a href="ordinances.html"> Ordinances</a></div></h2>
+            
+        </div>
+
+        
+	</body>
+
+    <footer>
+        <div class="textBox">
+            <hr>
+            <center><h1>Stay In Touch... Get Notified by Text!</h1></center>
+            <center><h1>Contact the Town Office to sign up.</h1></center>
+            <hr>
+        </div>
+    </footer>
+
+
+<style>
+    .slides { width: 100%; }
+    .slides-hidden { display : none; }
+</style>
+
+<script>
+    addEventListener("load",() => { // "load" is safe but "DOMContentLoaded" starts earlier
+        var index = 0;
+        const slides = document.querySelectorAll(".slides");
+        const classHide = "slides-hidden", count = slides.length;
+        nextSlide();
+        function nextSlide() {
+            slides[(index ++) % count].classList.add(classHide);
+            slides[index % count].classList.remove(classHide);
+            setTimeout(nextSlide, 3000);
+        }
+    });
+</script>
+
+<section>
+    <img class="slides slides-hidden" src="Photos\athens1.jpg">
+    <img class="slides slides-hidden" src="Photos\athens2.jpg">
+    <img class="slides slides-hidden" src="Photos\athens3.jpg">
+    <img class="slides slides-hidden" src="Photos\athens4.jpg">
+    <img class="slides slides-hidden" src="Photos\athens5.jpg">
+</section>

@@ -1,0 +1,45 @@
+.textBox{
+	background-color: #e2e2df;
+	color: #9d0208;
+}
+
+.grid{
+  display: grid;
+
+  grid-template-areas:
+  "five six seven eight"
+  "one two three four";
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  
+}
+
+.one{
+  text-align: center;
+}
+
+.two{
+  text-align: center;
+}
+.three{
+  text-align: center;
+}
+.four{
+  text-align: center;
+}
+.five{
+  text-align: center;
+}
+.six{
+  text-align: center;
+}
+.seven{
+  text-align: center;
+}
+.eight{
+  text-align: center;
+}
+footer{
+	top:10000px;
+}
